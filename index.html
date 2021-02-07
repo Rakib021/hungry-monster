@@ -4,48 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hungry Monster</title>
-    <!-- Css Link -->
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap Css Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <main class="container">
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hungry Monster</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
+    <div class="container">
+        <div class="meals">
+            <div class="meal-search">
+                <h2>Get Your Favorite Food</h2>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="#" tabindex="-1" >Recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#" tabindex="-1" >Blog</a>
-              </li>
-            </ul>
-           
-          </div>
+                <div class="meal-search-box">
+                    <input type="text" class="search-content" placeholder="Enter a Food Name " id="search-input">
+
+                    <button type="submit" class="search-btn-btn" id="search-btn">Search</button>
+                </div>
+               
+            </div>
+            <div class="meal-result">
+                <h2>Your Search Result :</h2>
+                <div id="meal">
+                    <!-- meal item -->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- another item -->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Potato chips</h3>
+
+                                
+                                            
+                                
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="meal-details">
+                <button class="btn close-btn" id="recipe-close-btn">X</button>
+
+                <div class="meal-details-content">
+                    <div class="recipe-meal-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt0p-zYGadPzEAiH7sDJw7iXSXwjYK3a5p0A&usqp=CAU" alt="">
+                    </div>
+                    <h2 class="recipe-title">Meals Name Here</h2>
+                    <p class="recipe-categoris">Categori Name</p>
+                    <h3>Instructions :</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur, accusantium nemo iste a facilis expedita assumenda, beatae distinctio exercitationem neque quidem libero aliquam atque tempore itaque nostrum laudantium non.</p>
+                </div>
+
+                
+            </div>
         </div>
-      </nav>
-      <form class="d-flex m-auto py -5">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-</header>
+    </div>
 
     <script src="food.js"></script>
-
-    </main>
 </body>
 </html>
