@@ -8,7 +8,7 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
 
-</head>
+</head> 
 <body>
     <div class="container">
         <div class="meals">
@@ -18,118 +18,28 @@
                 <div class="meal-search-box">
                     <input type="text" class="search-content" placeholder="Enter a Food Name " id="search-input">
 
-                    <button type="submit" class="search-btn-btn" id="search-btn">Search</button>
+                    <button onclick="searchMeal()"  class="search-btn-btn" id="search-btn">Search</button>
                 </div>
                
             </div>
+            
+            <div  id="meal-container">
             <div class="meal-result">
                 <h2>Your Search Result :</h2>
                 <div id="meal">
                     <!-- meal item -->
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
-                        
-                    </div>
-                    <!-- another item -->
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixJRA-pRX-1r4BFcC7P7a3Yc3CLW7vkQHpw&usqp=CAU" alt="">
-                        </div>
-                            <div class="meal-name">
-                                <h3>Potato chips</h3>
-
-                                
-                                            
-                                
-
-                            
-                        </div>
+                    
+                 
+                    
+              
+                   
                         
                     </div>
                 </div>
             </div>
-            <div class="meal-details">
-                <button class="btn close-btn" id="recipe-close-btn">X</button>
-
-                <div class="meal-details-content">
-                    <div class="recipe-meal-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt0p-zYGadPzEAiH7sDJw7iXSXwjYK3a5p0A&usqp=CAU" alt="">
-                    </div>
-                    <h2 class="recipe-title">Meals Name Here</h2>
-                    <p class="recipe-categoris">Categori Name</p>
-                    <h3>Instructions :</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur, accusantium nemo iste a facilis expedita assumenda, beatae distinctio exercitationem neque quidem libero aliquam atque tempore itaque nostrum laudantium non.</p>
+            <h3 id="error-msg" class="text-danger"></h3>
+            <div class="meal-details " id="meals-details">
+               
                 </div>
 
                 

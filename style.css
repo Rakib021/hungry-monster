@@ -16,6 +16,7 @@ body{
     padding:4px;
     background: white;
     text-align: center;
+
 }
 .meal-search{
     margin: 10px 0;
@@ -37,54 +38,25 @@ body{
    margin:10px;
     font-size: 20px;
 }
+#meal-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .meal-result{
-    margin-top: 4rem;
+    margin-top:30px;
 
 }
-#meal{
-    margin: 2.4rem 0;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 2rem;
-}
+
 .meal-item{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 21px  dimgray;
     margin: 0 10px;
+    
 }
-.meal-img{
-    width: 100%;
-    display: block;
-}
-.meal-name{
-    padding: 1.5rem 0.5rem;
-}
-.meal-details{
-    position: fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    color: white;
-    background-color: cadetblue;
-    border-radius: 10px;
-    width: 500px;
-    height: 90%;
-    display:none;
-}
-.close-btn{
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: white;
-    width: 35px;
-    height: 35px;
-}
-.meal-details-content{
-    margin: 4rem;
-}
-.recipe-meal-img img{
-    border-radius: 40px;
+
+
+.meals-image{
+    width:200px;
+    height: 200px;
 }
